@@ -1,0 +1,210 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 k63481116@gmail.com, 2, LIC=ATTQ1-CQ042-ARJXW-QV98F-ZBPKY-WLEVP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.18
+Toolchain Path:  F:\Program Files\Keil\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      CMSIS_AGDI.dll V1.25.7.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+E:\GIT\1\MDK-ARM\Chassis_Board.uvprojx
+Project File Date:  06/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'F:\Program Files\Keil\MDK\ARM\ARMCC\Bin'
+Build target 'Chassis_Board'
+compiling chassis_task.cpp...
+..\user_code\application\chassis_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user_code/device/crc32.h(13): warning:  #61-D: integer operation result is out of range
+          xbit = 1 << 31;
+../user_code/device/crc32.h(13): warning:  #68-D: integer conversion resulted in a change of sign
+          xbit = 1 << 31;
+../user_code/device/crc32.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif  // CRC32_H
+../user_code/module/Config.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+../user_code/module/chassis.h(27): warning:  #47-D: incompatible redefinition of macro "CHASSIS_TASK_INIT_TIME" (declared at line 9 of "..\user_code\application\chassis_task.h")
+  #define CHASSIS_TASK_INIT_TIME 1000         //ä»?åŠ?å¼€å§?ç©?é—?ä¸€æ®?æ—?é—?
+../user_code/module/chassis.h(111): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_VECTOR_SEN" (declared at line 97)
+  #define CHASSIS_MOTOR_RPM_TO_VECTOR_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+../user_code/module/chassis.h(112): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_OMG_SEN" (declared at line 100)
+  #define CHASSIS_MOTOR_RPM_TO_OMG_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+../user_code/module/chassis.h(202): error:  #67: expected a "}"
+      CHASSIS_B_RC_NO_YAW               //å¹?è¡?åº?ç›?ï¼?é?æŽ?å™?æŽ?åˆ?åº?ç›?
+../user_code/module/chassis.h(206): warning:  #12-D: parsing restarts here after previous syntax error
+  } chassis_mode_e;                      //æŽ?åˆ?æ¨?å¼?
+..\user_code\application\chassis_task.cpp(58): warning:  #1-D: last line of file ends without a newline
+  }
+..\user_code\application\chassis_task.cpp: 10 warnings, 1 error
+compiling Communicate.cpp...
+../user_code/device/crc32.h(13): warning:  #61-D: integer operation result is out of range
+          xbit = 1 << 31;
+../user_code/device/crc32.h(13): warning:  #68-D: integer conversion resulted in a change of sign
+          xbit = 1 << 31;
+../user_code/device/crc32.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif  // CRC32_H
+..\user_code\module\Config.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user_code\module\Chassis.h(111): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_VECTOR_SEN" (declared at line 97)
+  #define CHASSIS_MOTOR_RPM_TO_VECTOR_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\Chassis.h(112): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_OMG_SEN" (declared at line 100)
+  #define CHASSIS_MOTOR_RPM_TO_OMG_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\Chassis.h(202): error:  #67: expected a "}"
+      CHASSIS_B_RC_NO_YAW               //å¹?è¡?åº?ç›?ï¼?é?æŽ?å™?æŽ?åˆ?åº?ç›?
+..\user_code\module\Chassis.h(206): warning:  #12-D: parsing restarts here after previous syntax error
+  } chassis_mode_e;                      //æŽ?åˆ?æ¨?å¼?
+../Inc/usart.h(35): warning:  #337-D: linkage specification is incompatible with previous "huart1" (declared at line 26 of "..\user_code\module\communicate.h")
+  extern UART_HandleTypeDef huart1;
+../Inc/usart.h(37): warning:  #337-D: linkage specification is incompatible with previous "huart3" (declared at line 26 of "../user_code/protocol/Remote_control.h")
+  extern UART_HandleTypeDef huart3;
+../Inc/usart.h(39): warning:  #337-D: linkage specification is incompatible with previous "huart6" (declared at line 538 of "../user_code/protocol/Referee.h")
+  extern UART_HandleTypeDef huart6;
+..\user_code\module\Communicate.cpp(210): warning:  #550-D: variable "this_time_rx_len" was set but never used
+              static uint16_t this_time_rx_len = 0;
+..\user_code\module\Communicate.cpp(246): warning:  #550-D: variable "this_time_rx_len" was set but never used
+              static uint16_t this_time_rx_len = 0;
+..\user_code\module\Communicate.cpp: 12 warnings, 1 error
+compiling joint_motor.cpp...
+../user_code/device/crc32.h(13): warning:  #61-D: integer operation result is out of range
+          xbit = 1 << 31;
+../user_code/device/crc32.h(13): warning:  #68-D: integer conversion resulted in a change of sign
+          xbit = 1 << 31;
+../user_code/device/crc32.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif  // CRC32_H
+..\user_code\module\Config.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user_code\module\chassis.h(111): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_VECTOR_SEN" (declared at line 97)
+  #define CHASSIS_MOTOR_RPM_TO_VECTOR_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\chassis.h(112): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_OMG_SEN" (declared at line 100)
+  #define CHASSIS_MOTOR_RPM_TO_OMG_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\chassis.h(202): error:  #67: expected a "}"
+      CHASSIS_B_RC_NO_YAW               //å¹?è¡?åº?ç›?ï¼?é?æŽ?å™?æŽ?åˆ?åº?ç›?
+..\user_code\module\chassis.h(206): warning:  #12-D: parsing restarts here after previous syntax error
+  } chassis_mode_e;                      //æŽ?åˆ?æ¨?å¼?
+..\user_code\module\joint_motor.cpp(86): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	joint.FL = (
+P_Y * joint.delta_y - 
+D_Y * joint.vy + 
+)/2 + (
+P_ROLL * joint.delta_roll - 
+D_ROLL * joint.chassis_roll_speed)/
+;
+..\user_code\module\joint_motor.cpp(87): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	joint.FR = (
+P_Y * joint.delta_y - 
+D_Y * joint.vy + 
+)/2 - (
+P_ROLL * joint.delta_roll - 
+D_ROLL * joint.chassis_roll_speed)/
+;
+..\user_code\module\joint_motor.cpp(91): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		joint.joint_motor[0].torque_set = 0.5*joint.FR*joint.vyR;
+..\user_code\module\joint_motor.cpp(93): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	  joint.joint_motor[2].torque_set = 0.5*joint.FR*joint.vyL;
+..\user_code\module\joint_motor.cpp: 11 warnings, 1 error
+compiling Chassis.cpp...
+../user_code/device/crc32.h(13): warning:  #61-D: integer operation result is out of range
+          xbit = 1 << 31;
+../user_code/device/crc32.h(13): warning:  #68-D: integer conversion resulted in a change of sign
+          xbit = 1 << 31;
+../user_code/device/crc32.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif  // CRC32_H
+..\user_code\module\Config.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\user_code\module\Chassis.h(111): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_VECTOR_SEN" (declared at line 97)
+  #define CHASSIS_MOTOR_RPM_TO_VECTOR_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\Chassis.h(112): warning:  #47-D: incompatible redefinition of macro "CHASSIS_MOTOR_RPM_TO_OMG_SEN" (declared at line 100)
+  #define CHASSIS_MOTOR_RPM_TO_OMG_SEN CHASSIS_MOTOR_9025_CURRENT_TO_TORQUE_SEN
+..\user_code\module\Chassis.h(202): error:  #67: expected a "}"
+      CHASSIS_B_RC_NO_YAW               //å¹?è¡?åº?ç›?ï¼?é?æŽ?å™?æŽ?åˆ?åº?ç›?
+..\user_code\module\Chassis.h(206): warning:  #12-D: parsing restarts here after previous syntax error
+  } chassis_mode_e;                      //æŽ?åˆ?æ¨?å¼?
+..\user_code\module\Chassis.cpp(69): error:  #20: identifier "x" is undefined
+      x.min_speed = -NORMAL_MAX_CHASSIS_SPEED_X;
+..\user_code\module\Chassis.cpp(71): error:  #20: identifier "z" is undefined
+      z.min_speed = -NORMAL_MAX_CHASSIS_SPEED_Z;
+..\user_code\module\Chassis.cpp(123): error:  #20: identifier "x" is undefined
+  	x.speed = (chassis_balance_motive_motor[0].speed - chassis_balance_motive_motor[1].speed) /2;
+..\user_code\module\Chassis.cpp(124): error:  #20: identifier "omg" is undefined
+  	omg.speed = (chassis_balance_motive_motor[0].omg - chassis_balance_motive_motor[1].omg) /2;
+..\user_code\module\Chassis.cpp(151): error:  #20: identifier "x" is undefined
+          x.speed_set = cos_yaw * vx_set + sin_yaw * vy_set;
+..\user_code\module\Chassis.cpp(152): error:  #20: identifier "y" is undefined
+          y.speed_set = -sin_yaw * vx_set + cos_yaw * vy_set;
+..\user_code\module\Chassis.cpp(162): error:  #20: identifier "z" is undefined
+          z.speed_set = fp32_constrain(z.speed_set, z.min_speed, z.max_speed);
+..\user_code\module\Chassis.cpp(167): error:  #20: identifier "z" is undefined
+          z.speed_set = angle_set;
+..\user_code\module\Chassis.cpp(169): error:  #20: identifier "x" is undefined
+          x.speed_set = fp32_constrain(vx_set, x.min_speed, x.max_speed);
+..\user_code\module\Chassis.cpp(170): error:  #20: identifier "y" is undefined
+          y.speed_set = fp32_constrain(vy_set, y.min_speed, y.max_speed);
+..\user_code\module\Chassis.cpp(175): error:  #20: identifier "x" is undefined
+          x.speed_set = vx_set;
+..\user_code\module\Chassis.cpp(176): error:  #20: identifier "y" is undefined
+          y.speed_set = vy_set;
+..\user_code\module\Chassis.cpp(177): error:  #20: identifier "z" is undefined
+          z.speed_set = angle_set;
+..\user_code\module\Chassis.cpp(183): error:  #20: identifier "x" is undefined
+          x.speed_set = 0.0f;
+..\user_code\module\Chassis.cpp(206): warning:  #177-D: variable "max_torque" was declared but never referenced
+      fp32 max_torque = 0.0f, torque_rate = 0.0f;
+..\user_code\module\Chassis.cpp(206): warning:  #177-D: variable "torque_rate" was declared but never referenced
+      fp32 max_torque = 0.0f, torque_rate = 0.0f;
+..\user_code\module\Chassis.cpp(207): warning:  #177-D: variable "temp" was declared but never referenced
+      fp32 temp = 0.0f;
+..\user_code\module\Chassis.cpp(208): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i = 0;
+..\user_code\module\Chassis.cpp(465): error:  #20: identifier "x" is undefined
+          vx_set_channel = x.max_speed;
+..\user_code\module\Chassis.cpp(469): error:  #20: identifier "x" is undefined
+          vx_set_channel = x.min_speed;
+..\user_code\module\Chassis.cpp(474): error:  #20: identifier "y" is undefined
+          vy_set_channel = y.max_speed;
+..\user_code\module\Chassis.cpp(478): error:  #20: identifier "y" is undefined
+          vy_set_channel = y.min_speed;
+..\user_code\module\Chassis.cpp: 11 warnings, 19 errors
+"Chassis_Board\Chassis_Board.axf" - 22 Error(s), 44 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.12.0.pack
+                Keil.STM32F4xx_DFP.2.12.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Chassis_Board
+  F:\Program Files\Keil\MDK\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  F:\Program Files\Keil\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
